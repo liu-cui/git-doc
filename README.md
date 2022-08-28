@@ -1,4 +1,5 @@
 ## 关于关联远端仓库
+如果关联远端仓库失败，则1；否则跳转至3。主分支为
 1、查看远端关联仓库
 `$ git remote -v`
 
@@ -16,5 +17,37 @@
 - 推送失败，出现`fatal: refusing to merge unrelated histories`
 `$ git pull origin main --allow-unrelated-histories`
 并重新推送
+
+## 操作分支
+1、建立分支
+`$ git branch <branch1>`
+
+2、查看所有分支
+`$ git branch -a` 带*为当前分支
+
+3、切换分支到branch1
+`$ git checkout <branch1>`
+- 也可以-b，直接建立分支并进行切换操作
+`$ git checkout -b <branch2>`
+
+4、删除分支
+`$ git branch -d <branch1>`
+
+5、分支合并
+`$ git reset --hard HEAD~`
+
+6、冲突合并,rebase的使用
+rebase的时候，解决冲突后的提交不是使用commit。
+- 提交
+`$ git rebase --continue`
+- 取消rebase
+`$ git rebase --abort`
+
+
+## 操作tag
+
+
+
+
 
 
