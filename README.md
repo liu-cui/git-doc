@@ -1,5 +1,6 @@
 ## 关于关联远端仓库
-如果关联远端仓库失败，则1；否则跳转至3。主分支为
+
+如果关联远端仓库失败，则1；否则跳转至3。	
 1、查看远端关联仓库
 `$ git remote -v`
 
@@ -42,11 +43,6 @@ rebase的时候，解决冲突后的提交不是使用commit。
 `$ git rebase --continue`
 - 取消rebase
 `$ git rebase --abort`
-
-
-## 操作tag
-
-
 
 
 
