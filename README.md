@@ -1,3 +1,13 @@
+```
+echo "# spring-boot-demo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:liu-cui/spring-boot-demo.git
+git push -u origin main
+```
+
 ## 关于关联远端仓库
 
 如果关联远端仓库失败，则1；否则跳转至3。	
