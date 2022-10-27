@@ -40,6 +40,7 @@ git reset --hard origin/main
 ## 查看提交历史
 1、简化版
 `git log --pretty=oneline`
+
 2、查看某个人提交记录
 `git log --author=bob`
 
