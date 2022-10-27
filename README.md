@@ -1,3 +1,4 @@
+# 初次建仓
 ```
 echo "# spring-boot-demo" >> README.md
 git init
@@ -7,6 +8,40 @@ git branch -M main
 git remote add origin git@github.com:liu-cui/spring-boot-demo.git
 git push -u origin main
 ```
+
+# 操作
+## 分支差异
+在合并改动之前，可以预览一下差异
+`git diff <source_branch> <target_branch>`
+
+## 分支
+- 创建分支并切换过去
+`git checkout -b feature-x`
+
+- 删除分支
+`git branch -d feature-x` `-D`强制删除 
+
+## 撤销操作
+- 提交完之后才发现漏了几个文件没有添加，或者提交信息写错了。需要重新提交
+`git commit --amend`
+
+- 取消暂存的文件
+`git reset filename`
+
+- 撤销对文件的修改
+`git checkout -- filename`
+
+- 【替换本地改动】如果需要丢弃在本地的所有改动与提交，可以到服务器上获取最新的版本历史，并将你的本地分支指向它
+```
+git fetch origin
+git reset --hard origin/main
+```
+
+## 查看提交历史
+1、简化版
+`git log --pretty=oneline`
+2、查看某个人提交记录
+`git log --author=bob`
 
 ## 关于关联远端仓库
 
